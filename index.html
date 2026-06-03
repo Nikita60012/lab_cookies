@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie для лабы</title>
+</head>
+<body>
+    <h1>Установка cookie student</h1>
+    <script>
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+        document.cookie = "student=ivanov; expires=" + expires.toUTCString() + "; path=/";
+    </script>
+</body>
+</html>
