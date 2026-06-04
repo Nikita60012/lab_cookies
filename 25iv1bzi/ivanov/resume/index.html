@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме студента Пупкина В.И. группы 20ИВ1б</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .main {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .photo-frame {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .photo-frame img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+
+        .section h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3::before {
+            content: "▌";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #555;
+            min-width: 120px;
+            display: inline-block;
+        }
+
+        .job-item, .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .job-title, .edu-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .job-date, .edu-date {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .job-desc {
+            margin-top: 5px;
+            margin-left: 20px;
+            list-style-type: square;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #ccc, transparent);
+        }
+
+        .footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        @media (max-width: 700px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Резюме</h1>
+        <p>Пупкин Василий Иванович</p>
+        <p>Студент Пензенского государственного технологического университета</p>
+    </div>
+
+    <div class="content">
+        <!-- Левая колонка: фото + контакты -->
+        <div class="sidebar">
+            <div class="photo-frame">
+                <img src="photo.jpg" alt="Фотография" onerror="this.src='https://via.placeholder.com/200x200?text=Фото'; this.onerror=null;">
+            </div>
+
+            <div class="section">
+                <h3>Контакты</h3>
+                <div class="info-item"><span class="info-label">📧 E-mail:</span> pupkin.vasily@example.com</div>
+                <div class="info-item"><span class="info-label">📱 Телефон (дом.):</span> 8-8412-12-12-12</div>
+                <div class="info-item"><span class="info-label">📱 Телефон (раб.):</span> 8-987-654-32-10</div>
+                <div class="info-item"><span class="info-label">🎓 VK (опционально):</span> <a href="https://vk.com/example" target="_blank">vk.com/pupkin</a></div>
+            </div>
+
+            <div class="section">
+                <h3>Личное</h3>
+                <div class="info-item"><span class="info-label">📅 Дата рождения:</span> 15 мая 2005 г.</div>
+                <div class="info-item"><span class="info-label">💍 Семейное положение:</span> Не женат / Не замужем</div>
+                <div class="info-item"><span class="info-label">🌍 Иностранные языки:</span> Английский (B2 — Upper-Intermediate)</div>
+                <div class="info-item"><span class="info-label">🎨 Увлечения:</span> Программирование, шахматы, баскетбол, чтение научной фантастики</div>
+                <div class="info-item"><span class="info-label">🎓 Учебная группа:</span> 20ИВ1б</div>
+            </div>
+        </div>
+
+        <!-- Правая колонка: опыт, образование, награды -->
+        <div class="main">
+            <div class="section">
+                <h3>🎓 Образование</h3>
+                <div class="edu-item">
+                    <div class="edu-title">Пензенский государственный технологический университет (ПензГТУ)</div>
+                    <div class="edu-date">2024 – 2028 (по наст. время)</div>
+                    <div>Специальность: Информационные системы и технологии</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-title">Гимназия №1, г. Пенза</div>
+                    <div class="edu-date">2014 – 2024</div>
+                    <div>Аттестат с отличием (физико-математический профиль)</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>💼 Профессиональный опыт</h3>
+                <div class="job-item">
+                    <div class="job-title">Младший разработчик (стажировка) — ООО «ТехноСофт», г. Пенза</div>
+                    <div class="job-date">Июнь 2025 – Август 2025</div>
+                    <ul class="job-desc">
+                        <li>Разработка веб-интерфейсов на HTML, CSS, JavaScript</li>
+                        <li>Вёрстка адаптивных страниц под руководством наставника</li>
+                        <li>Работа с Git (система контроля версий)</li>
+                    </ul>
+                </div>
+                <div class="job-item">
+                    <div class="job-title">Фриланс-разработчик (самозанятый)</div>
+                    <div class="job-date">2024 – по наст. время</div>
+                    <ul class="job-desc">
+                        <li>Создание лендингов для малого бизнеса (3 успешных проекта)</li>
+                        <li>Настройка форм обратной связи и интеграция с CRM</li>
+                        <li>Оптимизация скорости загрузки сайтов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>🏆 Награды и поощрения</h3>
+                <ul class="job-desc" style="margin-left: 20px;">
+                    <li>Диплом II степени на Всероссийской олимпиаде по информатике (2024)</li>
+                    <li>Повышенная академическая стипендия за достижения в учёбе (2025)</li>
+                    <li>Сертификат участника хакатона «Цифровой прорыв» (2025)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>⚡ Прочее</h3>
+                <ul class="job-desc" style="margin-left: 20px;">
+                    <li>Владение: Python, JavaScript, HTML/CSS, основы SQL, Git, Figma</li>
+                    <li>Личные качества: ответственность, обучаемость, коммуникабельность</li>
+                    <li>Наличие портфолио на GitHub: <a href="#">github.com/pupkin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Резюме студента Пупкина В.И. группы 20ИВ1б<br>
+        Все данные достоверны и предоставлены добровольно
+    </div>
+</div>
+</body>
+</html>
